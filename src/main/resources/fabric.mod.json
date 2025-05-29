@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "functionalcopper",
+	"version": "${version}",
+	"name": "Functional Copper",
+	"description": "Adds functional copper tools and armor.",
+	"authors": [
+		"Patrick Flynn"
+	],
+	"contact": {
+		"homepage": "https://codegrove.dev/",
+		"sources": "https://github.com/patflynn90/functionalcopper"
+	},
+	"license": "MIT",
+	"icon": "assets/functionalcopper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.codegrove.functionalcopper.FunctionalCopper"
+		],
+		"fabric-datagen": [
+			"dev.codegrove.functionalcopper.FunctionalCopperDataGenerator"
+		],
+		"client": [
+			"dev.codegrove.functionalcopper.FunctionalCopperClient"
+		]
+	},
+	"mixins": [
+		"functionalcopper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
